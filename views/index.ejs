@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoApp</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <script src="/assets/js/remove.js"></script>
+
+    <div id="form_holder">
+        <form method="POST" action="/">
+            <input type="text" name="item" placeholder="Add new item..." id="txt_field">
+            <button type="submit" onclick="addItem(this)"  id="btn">Add item</button>
+        </form>
+        <div id="added_list">
+            <ul id="objList">
+                <% for(var i = 0; i<listTD.length; i++){ %>
+                <li onclick="remove(this)"><%=listTD[i].item;%></li>
+                <%}%>
+                </ul>
+        </div>
+    </div>
+</body>
+</html>

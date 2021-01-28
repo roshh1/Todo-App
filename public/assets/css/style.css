@@ -1,0 +1,39 @@
+body{
+    background-color: cornflowerblue;
+    margin: 20px 50px;
+}
+#form_holder{
+    background-color:black;
+    text-align: center;
+    padding: 5px;
+
+}
+#txt_field{
+    width: 70%;
+    height: 50px;
+    margin-top: 15px;
+    font-size: 2em;
+}
+#btn{
+    width: 25%;
+    height: 50px;
+    margin: auto;
+    background-color: tomato;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+}
+#btn:hover{
+    background-color: rgb(190, 37, 10);
+}
+
+#added_list {
+    background-color: blueviolet;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+}
+li:hover{
+ color: white;
+}
